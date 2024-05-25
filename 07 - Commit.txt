@@ -1,0 +1,11 @@
+/*Exercise: Commit*/
+
+/*En este ejercicio lo hice de esta manera, sin embargo, no hace nada ya que no tengo ese book_id en mi tabla. Por otra parte me causa duda saber en que casos puedo hacerlo de alguna de las siguientes maneras*/
+
+/*MANERA 1*/
+BEGIN TRANSACTION;
+DELETE FROM Books WHERE book_id = 101;
+COMMIT;
+
+/*MANERA 2*/
+DELETE FROM Books WHERE book_id = 101;

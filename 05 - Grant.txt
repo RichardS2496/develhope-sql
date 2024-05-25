@@ -1,0 +1,5 @@
+/*Exercise: Grant*/
+
+/*Aca he intentado de usar GRANT de esta forma, pero aparentemente SQL Online no permite ese comando*/
+
+GRANT SELECT, INSERT, UPDATE ON Books TO 'martin'@'localhost';

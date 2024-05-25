@@ -1,0 +1,5 @@
+/*Exercise: Revoke*/
+
+/*Aca ha sucedido lo mismo, pero investigue y ha de ser algo como esto*/
+
+REVOKE UPDATE ON Books FROM 'martin'@'localhost';

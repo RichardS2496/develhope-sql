@@ -3,3 +3,17 @@
 /*Aca he intentado de usar GRANT de esta forma, pero aparentemente SQL Online no permite ese comando*/
 
 GRANT SELECT, INSERT, UPDATE ON Books TO 'martin'@'localhost';
+
+/*Luego del primer commit vi el video de como hacerlo y decidi agregar los comandos de como quedaria agregando el ROLE primero*/
+
+/*Creando el rol*/
+
+CREATE ROLE assistant;
+
+/*Estableciendo los permisos del rol*/
+
+GRANT SELECT, INSERT, UPDATE ON Books TO assistant;
+
+/*Asignando el rol a un usuario, donde los permisos ya han sido previamente establecidos y quedan tácitos en la asignacion*/
+
+GRANT assistant to 'martin'@'localhost';

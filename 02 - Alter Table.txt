@@ -1,0 +1,9 @@
+/*Exercise: Alter Table*/
+
+Quise subir 2 columnas a la vez, pero SQLite solo me ha dejado cargar una a una.
+
+
+  
+  ALTER TABLE Books ADD COLUMN publisher VARCHAR(50);
+  
+  ALTER TABLE Books ADD COLUMN page_count INTEGER;

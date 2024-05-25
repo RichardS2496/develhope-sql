@@ -1,0 +1,13 @@
+/*Exersise: Create a table*/
+
+CREATE TABLE Books(
+  book_id INTEGER PRIMARY KEY AUTOINCREMENT,
+  title TEXT VARCHAR(255),
+  author TEXT NOT NULL,
+  genre TEXT VARCHAR(8),
+  published_year INTEGER,
+  isbn VARCHAR(20) unique,
+  price DECIMAL(10,2),
+  rating DECIMAL(3,2),
+  stock_count INTEGER
+  );

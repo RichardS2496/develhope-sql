@@ -6,7 +6,7 @@ CREATE TABLE Books(
   author TEXT NOT NULL,
   genre TEXT VARCHAR(8),
   published_year INTEGER,
-  isbn VARCHAR(20) unique,
+  isbn VARCHAR(20),
   price DECIMAL(10,2),
   rating DECIMAL(3,2),
   stock_count INTEGER

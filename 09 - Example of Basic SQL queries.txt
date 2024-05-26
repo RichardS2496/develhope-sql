@@ -1,0 +1,21 @@
+/*Exercise: Example of Basic SQL queries*/
+
+/*Parte 1*/
+
+SELECT * FROM tested WHERE sex = 'female' AND age> 30 AND survived = 1;
+
+/*Parte 2*/
+
+SELECT AVG(age) FROM tested WHERE survived=0 AND sex='male';
+
+/*Parte 3*/
+
+SELECT * FROM tested WHERE embarked = 'C' AND fare BETWEEN 20 AND 50;
+
+/*Parte 4*/
+
+SELECT COUNT(*) AS survivor FROM tested WHERE pclass = 1;
+
+/*Parte 5*/ 
+
+SELECT * FROM tested WHERE embarked = 'C' AND fare > 75;
